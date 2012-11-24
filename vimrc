@@ -143,7 +143,7 @@ Bundle 'Lokaltog/vim-powerline'
 " Adds gr command to replace text (takes a motion)
 " similar to v(motion)p but also cuts text into black hole register so it is
 " repeatable. So really it's similar to v(motion)"_p
-Bundle 'ReplaceWithRegister'
+Bundle 'ReplaceWithRegister':
 
 :runtime macros/matchit.vim
 
@@ -242,6 +242,7 @@ cmap %% <C-R>=expand("%:p:h") . "/" <CR>
 " Enable syntastic syntax checking
 let g:syntastic_enable_signs=1
 let g:syntastic_quiet_warnings=1
+let g:syntastic_python_checker="flake8"
 
 " Turn off jslint errors by default
 let g:JSLintHighlightErrorLine = 0
