@@ -1,5 +1,7 @@
 set nocompatible
 let mapleader = ","
+an be typed even faster than jj.
+:imap jk <Esc>
 
 " Vundle
 filetype on
